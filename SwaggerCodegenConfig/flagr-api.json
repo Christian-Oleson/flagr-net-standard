@@ -1,0 +1,5 @@
+{
+	"packageName": "Flagr.Api",
+	"targetFramework": "v5.0",
+	"netCoreProjectFile" : true
+}

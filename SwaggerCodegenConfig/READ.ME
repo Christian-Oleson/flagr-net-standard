@@ -1,0 +1,12 @@
+# API Clients #
+Generating API clients requires Swagger-Codegen (https://github.com/swagger-api/swagger-codegen). There are templates available that will automatically generate APIs with the correct namespace, so you can update the client library quickly and easily.
+
+# Generating Clients #
+The syntax for generating them is:
+java -jar swagger-codegen-cli-#.#.#.jar generate -l csharp -c PROJECT-JSON-TEMPLATE -i PROJECT-JSON-ENDPOINT -o OUTPUT-FOLDER
+
+## Flagr ##
+### YAML Documentation ###
+https://checkr.github.io/flagr/api_docs/bundle.yaml
+### Command ###
+	java -jar swagger-codegen-cli-2.4.26.jar generate -l csharp -c flagr-api.json -i https://checkr.github.io/flagr/api_docs/bundle.yaml -o ../src -t ./mustache-Restsharp
