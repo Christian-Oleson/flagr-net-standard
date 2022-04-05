@@ -25,6 +25,7 @@ namespace Flagr.Api
             {
                 BasePath = basePath,
             };
+            _apiConfiguration.AddDefaultHeader("Content-Type", "application/json");
         }
 
         /// <summary>
